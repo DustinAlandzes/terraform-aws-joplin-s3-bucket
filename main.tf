@@ -1,4 +1,5 @@
 terraform {
+  required_version = "~> 1.0.9"
   backend "remote" {
     hostname     = "app.terraform.io"
     organization = "dustinalandzes"
