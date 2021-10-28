@@ -95,7 +95,8 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "joplin" {
-  acl = "private"
+  acl           = "private"
+  bucket_prefix = "joplin"
 
   versioning {
     enabled = false
