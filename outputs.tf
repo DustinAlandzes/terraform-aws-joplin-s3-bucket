@@ -11,4 +11,5 @@ output "joplin_aws_key" {
 output "joplin_aws_secret" {
   value       = aws_iam_access_key.joplin.secret
   description = "AWS secret in Joplin"
+  sensitive   = true
 }
