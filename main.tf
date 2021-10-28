@@ -127,7 +127,6 @@ resource "aws_iam_user_policy" "joplin" {
     "Statement" : [
       {
         Effect : "Allow",
-        Principal : "*",
         Action : [
           "s3:ListBucket",
           "s3:GetBucketLocation",
