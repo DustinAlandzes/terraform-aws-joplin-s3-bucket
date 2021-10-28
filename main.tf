@@ -98,7 +98,7 @@ resource "aws_s3_bucket" "joplin" {
   acl = "private"
 
   versioning {
-    enabled = true
+    enabled = false
   }
 
   server_side_encryption_configuration {
