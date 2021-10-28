@@ -130,6 +130,7 @@ resource "aws_iam_user_policy" "joplin" {
         Action : [
           "s3:ListBucket",
           "s3:GetBucketLocation",
+          "s3:GetObject",
           "s3:DeleteObject",
           "s3:DeleteObjectVersion",
           "s3:PutObject"
