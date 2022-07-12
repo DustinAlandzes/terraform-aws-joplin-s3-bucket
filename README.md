@@ -3,7 +3,9 @@
 <img width="64" src="https://raw.githubusercontent.com/laurent22/joplin/dev/Assets/LinuxIcons/256x256.png" /> 
 <img width="64 src="https://registry.terraform.io/images/providers/aws.png" />
 <img width="64" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Amazon-S3-Logo.svg/218px-Amazon-S3-Logo.svg.png" />
-A repository for a module that creates an S3 bucket, and IAM user that only has access to it.
+
+This is a repository for a Terraform module that creates an AWS S3 bucket, along with an IAM user that only has access to that bucket.
+
 It will output the bucket, access key and secret you need to add to Joplin.
 
 [Terraform Registry](https://registry.terraform.io/modules/DustinAlandzes/joplin-s3-bucket/aws/latest)
@@ -59,7 +61,8 @@ terraform {
 ```
 
 Because `joplin_aws_secret` is marked as sensitive you'll need to get it from the state (The State tab in terraform cloud).
+
 ## documentation
 
-https://github.com/laurent22/joplin#aws-s3-synchronisation
+https://github.com/laurent22/joplin#s3-synchronisation
 
